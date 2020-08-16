@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<Script>
+  'use strict';
+
+  //code here
+
+//const person = new Object();
+//person.firstName='Numan';
+//person.lastName='Razzaq';
+  //Objects literals
+//function Person (firstName,lastName){
+//    this.firstName = firstName;
+//   this.lastName = lastName;
+//}
+//Person.prototype.getFullName = function(){
+//  return this.firstName +' '+this.lastName;
+//};
+// const person =new Person ('Numan','Razzaq');
+
+
+const personJSON = '{"firstName":"Numan","lastName":"Razzaq"}';
+const person = JSON.parse(personJSON);
+
+
+console.log(person.firstName +' '+person.lastName);
+console.dir(person);
+</Script>
